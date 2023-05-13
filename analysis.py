@@ -63,3 +63,64 @@ with open('summary.txt', 'w') as file:
 
 # Print messag to to say file has been created and saved
 print("Success, the file has save down: 'summary.txt'.")
+
+# Section 2 - Data Visualization
+
+# For this section we need libraries for visualisation
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# 2.1 Histograms
+# For each of the features in the dataset, we will create a histogram.
+# This is to help us visualize the distribution of each individual variable.
+
+for col in df.columns[:-1]:  # this excludes the non-numerical column of data 'speices' in the last (5th column)
+
+    plt.figure(figsize=(10, 6))  # Set the size of the histogram plot
+
+    # Create the histogram using seaborn (sns)
+    # We set the DataFrame 'df' as source, and 'x' as the column to plot
+    # 'hue' helps us add additional level of details for the 'species' column
+    # 'element="step"'shoes the histogram bars using step function. Shows clear visual representation of the distribution & position of data points in each bin.
+    # 'stat="density"' scales the histogram so  total area equals 1 (represent probability density).
+    # This allows us to compare the shapes and proportions of different bins
+    # and 'common_norm' as 'False' to normalise each 'species' separately.
+    sns.histplot(df, x=col, hue="species", element="step", stat="density", common_norm=False)
+
+    # Title of the histogram using current column name
+    plt.title(f'{col.capitalize()} Distribution')
+
+    # Save the histogram as a .png file using the current column name
+    plt.savefig(f'{col}_distribution.png')
+
+    # Show the histogram plot
+    plt.show()
+
+
+# 2.2 Scatterplots
+# We will create scatterplots for each pair of features. 
+# This will visualise the relationship between two variables.
+sns.pairplot(df, hue="species", height=3, aspect=1);
+plt.savefig('scatterplot.png')  # save the scatterplot as a .png file
+plt.show()
+
+# 2.3 Boxplots
+# We will create boxplots for each feature. 
+# This will show us the distibution of the data. 
+# (“minimum”, first quartile (Q1), median, third quartile (Q3), and “maximum”).
+plt.figure(figsize=(12, 8))  # set the figure size
+sns.boxplot(data=df, orient="h", palette="Set2")
+plt.title('Box plot of each feature in the dataset')  # set the boxplot title
+plt.savefig('boxplot.png')  # save the boxplot as a .png file
+plt.show()
+
+# 2.4 Correlation Heatmap
+# We will create a heatmap of the correlation between different features.
+plt.figure(figsize=(10, 8))  # set the figure size
+sns.heatmap(df.corr(), annot=True, cmap='coolwarm', center=0)
+plt.title('Correlation heatmap')  # set the heatmap title
+plt.savefig('correlation_heatmap.png')  # save the heatmap as a .png file
+plt.show()
+
+
+

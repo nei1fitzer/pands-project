@@ -1,0 +1,47 @@
+Descriptive Statistics:
+       sepal_length  sepal_width  petal_length  petal_width
+count    150.000000   150.000000    150.000000   150.000000
+mean       5.843333     3.054000      3.758667     1.198667
+std        0.828066     0.433594      1.764420     0.763161
+min        4.300000     2.000000      1.000000     0.100000
+25%        5.100000     2.800000      1.600000     0.300000
+50%        5.800000     3.000000      4.350000     1.300000
+75%        6.400000     3.300000      5.100000     1.800000
+max        7.900000     4.400000      6.900000     2.500000
+
+Missing Values:
+sepal_length    0
+sepal_width     0
+petal_length    0
+petal_width     0
+species         0
+dtype: int64
+
+Outliers (values beyond 3 standard deviations):
+     sepal_length  sepal_width  petal_length  petal_width
+0             NaN          NaN           NaN          NaN
+1             NaN          NaN           NaN          NaN
+2             NaN          NaN           NaN          NaN
+3             NaN          NaN           NaN          NaN
+4             NaN          NaN           NaN          NaN
+..            ...          ...           ...          ...
+145           NaN          NaN           NaN          NaN
+146           NaN          NaN           NaN          NaN
+147           NaN          NaN           NaN          NaN
+148           NaN          NaN           NaN          NaN
+149           NaN          NaN           NaN          NaN
+
+[150 rows x 4 columns]
+
+Correlation:
+              sepal_length  sepal_width  petal_length  petal_width
+sepal_length      1.000000    -0.109369      0.871754     0.817954
+sepal_width      -0.109369     1.000000     -0.420516    -0.356544
+petal_length      0.871754    -0.420516      1.000000     0.962757
+petal_width       0.817954    -0.356544      0.962757     1.000000
+
+Speices Counts:
+Iris-setosa        50
+Iris-versicolor    50
+Iris-virginica     50
+Name: species, dtype: int64
