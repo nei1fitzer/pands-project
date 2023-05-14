@@ -68,7 +68,7 @@ The dataset is checked for missing values, ensuring the integrity of subsequent 
 
 ## Outliers Analysis
 
-Outliers, defined as values that are more than 3 standard deviations away from the mean, are detected in the dataset. Among the identified outliers, sample number 16 stands out with values of 5.7 for sepal length, 4.4 for sepal width, 1.5 for petal length, and 0.4 for petal width. This outlier belongs to the Iris-setosa species.
+Outliers, defined as values that are more than 3 standard deviations away from the mean, are detected in the dataset. Among the identified outliers, sample 15 (ID 16 in the dataset) stands out with values of 5.7 for sepal length, 4.4 for sepal width, 1.5 for petal length, and 0.4 for petal width. This outlier belongs to the Iris-setosa species.
 
 ---
 
