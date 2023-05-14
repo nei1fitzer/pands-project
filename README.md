@@ -57,6 +57,8 @@ Outliers, defined as values that are more than 3 standard deviations away from t
 
 The relationships between different variables in the dataset are explored through correlation analysis. The computed correlation matrix reveals interesting patterns. There is a strong positive correlation of 0.96 between petal length and petal width, indicating a linear relationship between these two variables. Similarly, sepal length and petal length show a positive correlation of 0.87, while sepal length and petal width exhibit a positive correlation of 0.81. These findings suggest that certain morphological features in the Iris flowers are closely related, potentially providing insights into their underlying biological characteristics.
 
+![Correlation Heatmap: Relationships between Iris Flower Features](correlation_heatmap.png)
+
 ---
 
 ## Species Distribution Analysis
