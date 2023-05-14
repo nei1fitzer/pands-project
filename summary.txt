@@ -18,20 +18,8 @@ species         0
 dtype: int64
 
 Outliers (values beyond 3 standard deviations):
-     sepal_length  sepal_width  petal_length  petal_width
-0             NaN          NaN           NaN          NaN
-1             NaN          NaN           NaN          NaN
-2             NaN          NaN           NaN          NaN
-3             NaN          NaN           NaN          NaN
-4             NaN          NaN           NaN          NaN
-..            ...          ...           ...          ...
-145           NaN          NaN           NaN          NaN
-146           NaN          NaN           NaN          NaN
-147           NaN          NaN           NaN          NaN
-148           NaN          NaN           NaN          NaN
-149           NaN          NaN           NaN          NaN
-
-[150 rows x 4 columns]
+    sepal_length  sepal_width  petal_length  petal_width      species
+15           5.7          4.4           1.5          0.4  Iris-setosa
 
 Correlation:
               sepal_length  sepal_width  petal_length  petal_width
@@ -40,7 +28,7 @@ sepal_width      -0.109369     1.000000     -0.420516    -0.356544
 petal_length      0.871754    -0.420516      1.000000     0.962757
 petal_width       0.817954    -0.356544      0.962757     1.000000
 
-Speices Counts:
+Species Counts:
 Iris-setosa        50
 Iris-versicolor    50
 Iris-virginica     50
