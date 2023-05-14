@@ -4,6 +4,7 @@
 
 ## Table of Contents
 - [Introduction](#Introduction)
+- [Prerequisites](#Prerequisites)
 - [Analysis](#Analysis)
   - [Data Loading and Descriptive Analysis](#data-loading-and-descriptive-analysis)
 - [Missing Values Analysis](#missing-values-analysis)
@@ -34,6 +35,24 @@ With the Fisher Iris dataset as the foundation, this project aims to delve into 
 ## Analysis
 
 ---
+
+## Prerequisites
+
+- **Python 3.6 or higher**
+
+- **Pandas**
+You can install it by running pip install pandas in your terminal.
+
+- **Matplotlib**
+You can install it by running pip install matplotlib in your terminal.
+
+- **Seaborn**
+You can install it by running pip install seaborn in your terminal.
+
+- **Other**
+Please ensure you have the following file save in the same directory as the analysis script:
+  - [iris.data](irish.data)[8].
+
 
 ### Data Loading and Descriptive Analysis
 
@@ -159,4 +178,5 @@ I appreciate your understanding and assure you of my commitment to maintaining a
 5. Hastie, T., Tibshirani, R., & Friedman, J. (2009). The Elements of Statistical Learning: Data Mining, Inference, and Prediction (2nd ed.). Springer.
 6. Scikit-learn. (n.d.). Iris Species Dataset. Retrieved from https://scikit-learn.org/stable/datasets/toy_dataset.html#iris-dataset
 7. ChatGPT: OpenAI. (2021). GPT-3.5. https://openai.com/blog/gpt-3-5/
+8. Dua, D., & Graff, C. (2019). UCI Machine Learning Repository. Irvine, CA: University of California, School of Information and Computer Science. Retrieved from http://archive.ics.uci.edu/ml/datasets/Iris
 
