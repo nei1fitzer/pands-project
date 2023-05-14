@@ -37,7 +37,7 @@ With the Fisher Iris dataset as the foundation, this project aims to delve into 
 
 ### Data Loading and Descriptive Analysis
 
-The Iris dataset is loaded into a pandas DataFrame, allowing for efficient data manipulation and analysis. Descriptive statistics are computed to provide an overview of the dataset, including the count, mean, standard deviation, and quartiles of the morphological features.
+The Iris dataset is loaded into a pandas DataFrame, allowing for efficient data manipulation and analysis. Descriptive statistics are computed to provide an overview of the dataset, including the count, mean, standard deviation, and quartiles of the morphological features. These can be seen within the [summary.txt file](summary.txt).
 
 ---
 
