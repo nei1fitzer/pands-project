@@ -57,8 +57,6 @@ Outliers, defined as values that are more than 3 standard deviations away from t
 
 The relationships between different variables in the dataset are explored through correlation analysis. The computed correlation matrix reveals interesting patterns. There is a strong positive correlation of 0.96 between petal length and petal width, indicating a linear relationship between these two variables. Similarly, sepal length and petal length show a positive correlation of 0.87, while sepal length and petal width exhibit a positive correlation of 0.81. These findings suggest that certain morphological features in the Iris flowers are closely related, potentially providing insights into their underlying biological characteristics.
 
-![Correlation Heatmap: Relationships between Iris Flower Features](correlation_heatmap.png)
-
 ---
 
 ## Species Distribution Analysis
@@ -77,11 +75,19 @@ To gain further insights into the dataset, various visualisations have been crea
 
 Histograms are generated to visualise the distributions of sepal length, sepal width, petal length, and petal width. The histograms provide a visual representation of the frequency of different values in each feature. From the descriptive statistics, we can observe that the measurements have varying ranges and central tendencies. Analysing the histograms allows us to gain insights into the distribution of values within each feature. For example, the sepal length histogram shows a relatively normal distribution, with the majority of the measurements centered around 5.8. On the other hand, the petal width histogram reveals a bimodal distribution, suggesting the presence of two distinct groups within the dataset. These histograms help us understand the distribution patterns and variations in the morphological features of the Iris flowers.
 
+
+![Distribution of Sepal Length in Iris Flowers](sepal_length_distribution.png)
+![Distribution of Sepal Width in Iris Flowers](sepal_width_distribution.png)
+![Distribution of Petal Length in Iris Flowers](petal_length_distribution.png)
+![Distribution of Petal Width in Iris Flowers](petal_width_distribution.png)
+
 ---
 
 ### Scatter Plots
 
 Scatter plots are created to visualise the relationships between pairs of variables. The scatter plot matrix displays the relationships between sepal length and width, as well as petal length and width. By examining the correlation matrix, we can identify the presence of both positive and negative correlations between these variables. The scatter plots help us visualise these relationships and verify the observed correlations. For instance, the scatter plot of sepal length and width shows a moderate negative correlation, indicating that as sepal length increases, sepal width tends to decrease. Similarly, the scatter plot of petal length and width exhibits a strong positive correlation, suggesting that as petal length increases, petal width also tends to increase. These scatter plots provide valuable insights into the interrelationships among the morphological features of the Iris flowers.
+
+![Scatter Plot of Sepal Length vs. Sepal Width in Iris Flowers](scatterplot.png)
 
 ---
 
@@ -89,11 +95,18 @@ Scatter plots are created to visualise the relationships between pairs of variab
 
 Box plots are utilised to showcase the distributions of sepal length, sepal width, petal length, and petal width. The descriptive statistics provide insights into the central tendencies, variability, and potential outliers in the dataset. The box plots allow us to visually compare the quartiles, median, and potential outliers across the features. By analysing the box plots, we can observe the spread and skewness of each feature's distribution. For instance, the box plot of sepal length shows a relatively symmetrical distribution, with no significant outliers. On the other hand, the box plot of petal length reveals a positively skewed distribution, with a few potential outliers beyond the upper quartile. These box plots enable us to assess the variability and distribution characteristics of the morphological features in the Iris flowers.
 
+![Box Plot of Petal Length in Iris Flowers](boxplot.png)
+
 ---
 
 ### Violin Plots
 
 Violin plots are employed to visualise the distributions of sepal length, sepal width, petal length, and petal width for each species. The species counts reveal that the dataset is well-balanced, with 50 samples for each of the three species. The violin plots provide a comprehensive view of the distribution and density of the features across different species. By examining the violin plots, we can analyse the variations and differences in the morphological features among the Iris species. For example, the violin plot of sepal length illustrates that Iris-setosa tends to have a shorter sepal length compared to Iris-versicolor and Iris-virginica. Additionally, the violin plot of petal width indicates that Iris-virginica generally exhibits a wider range of petal widths compared to the other two species. These violin plots facilitate the identification of distinct patterns and variations in the morphological features of the Iris flowers within the species context.
+
+![Violin Plot: Sepal Length Distribution](violin_plot_sepal_length.png)
+![Violin Plot: Sepal Width Distribution](violin_plot_sepal_width.png)
+![Violin Plot: Petal Length Distribution](violin_plot_petal_length.png)
+![Violin Plot: Petal Width Distribution](violin_plot_petal_width.png)
 
 ---
 
@@ -104,6 +117,9 @@ A correlation heatmap is created to visualise the correlation matrix. The heatma
 The correlation heatmap reveals the interdependencies and associations between the variables. By observing the color intensity and patterns in the heatmap, we can identify the strength and direction of the correlations. Darker shades indicate stronger correlations, while lighter shades represent weaker correlations.
 
 Upon analysing the heatmap, we observe several interesting correlations. Notably, there is a strong positive correlation between petal length and petal width, indicated by the dark red color. This suggests that as the length of the petal increases, the width of the petal also tends to increase. Similarly, there are positive correlations between sepal length and petal length, as well as sepal length and petal width. These findings align with our previous observations from the scatter plots, further confirming the relationships between these variables. There are negative correlations between sepal width and petal length, as well as sepal width and petal width. These negative correlations indicate that as the sepal width increases, the petal length and petal width tend to decrease. These relationships provide insights into the morphological characteristics of the Iris flowers and contribute to our understanding of their biological attributes.
+
+
+![Correlation Heatmap: Relationships between Iris Flower Features](correlation_heatmap.png)
 
 ---
 
@@ -142,4 +158,5 @@ I appreciate your understanding and assure you of my commitment to maintaining a
 4. Singer, J. D., & Willett, J. B. (1990). Improving the teaching of applied statistics: Putting the data back into data analysis. The American Statistician, 44(3), 223-230.
 5. Hastie, T., Tibshirani, R., & Friedman, J. (2009). The Elements of Statistical Learning: Data Mining, Inference, and Prediction (2nd ed.). Springer.
 6. Scikit-learn. (n.d.). Iris Species Dataset. Retrieved from https://scikit-learn.org/stable/datasets/toy_dataset.html#iris-dataset
+7. ChatGPT: OpenAI. (2021). GPT-3.5. https://openai.com/blog/gpt-3-5/
 
