@@ -50,8 +50,8 @@ You can install it by running pip install matplotlib in your terminal.
 You can install it by running pip install seaborn in your terminal.
 
 - **Other**
-Please ensure you have the following file save in the same directory as the analysis script:
-  - [iris.data](irish.data)[8].
+Please ensure you have the following file saved in the same directory as the analysis script:
+  - [iris.data](iris.data)[8].
 
 
 ### Data Loading and Descriptive Analysis
